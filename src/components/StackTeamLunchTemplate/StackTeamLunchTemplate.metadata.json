@@ -1,0 +1,56 @@
+{
+  "name": "StackTeamLunchTemplate",
+  "description": "Top-level Claude Design template for Stack, a mobile-first office team lunch group-ordering product.",
+  "variants": [
+    {
+      "prop": "screen",
+      "values": ["browse", "menu", "item", "cart", "tracking", "orders", "profile"],
+      "default": "browse"
+    },
+    {
+      "prop": "themeName",
+      "values": ["sage", "terracotta", "slate", "cobalt"],
+      "default": "sage"
+    }
+  ],
+  "designTokensUsed": [
+    "color.stack.sage.bg",
+    "color.stack.sage.surface",
+    "color.stack.sage.ink",
+    "color.stack.sage.primary",
+    "color.stack.sage.accent",
+    "font.family.geistSans",
+    "font.family.geistMono",
+    "radii.phone",
+    "shadow.phone"
+  ],
+  "accessibility": [
+    "The production implementation should use semantic navigation, buttons, links, forms, and status updates for each screen.",
+    "The tracking screen should announce major delivery status changes through an aria-live region.",
+    "The item customization screen should group required choices with fieldset and legend semantics."
+  ],
+  "usage": {
+    "do": [
+      "Use as the high-level reference for implementing the Stack browse, menu, item, cart, tracking, orders, and profile flows.",
+      "Keep the mobile-first hierarchy: status/header area, scrollable content, and bottom tab or sticky CTA.",
+      "Use real food imagery that clearly shows the restaurant or dish."
+    ],
+    "dont": [
+      "Do not copy the Claude handoff's inline prototype structure directly into production.",
+      "Do not ship the fake phone frame in the production app; reserve it for preview and documentation surfaces.",
+      "Do not mix multiple palettes on the same screen."
+    ]
+  },
+  "examples": [
+    {
+      "title": "Browse template",
+      "code": "<StackTeamLunchTemplate screen=\"browse\" themeName=\"sage\"><BrowseScreen /></StackTeamLunchTemplate>"
+    }
+  ],
+  "sourceHandoff": {
+    "url": "https://api.anthropic.com/v1/design/h/3VYdB6fCUrAvZSYVmj8nzg?open_file=index.html",
+    "localIndex": "handoffs/project/index.html",
+    "chatTranscript": "handoffs/chats/chat1.md",
+    "intent": "Office team lunch group ordering, mobile-first, clean minimal modern aesthetic, clickable flow across browse/menu/item/cart/tracking/orders/profile, with palette and font tweaks."
+  }
+}

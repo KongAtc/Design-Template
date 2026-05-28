@@ -1,0 +1,27 @@
+{
+  "componentName": "StackTeamLunchTemplate",
+  "source": "src/components/StackTeamLunchTemplate/StackTeamLunchTemplate.tsx",
+  "props": {
+    "children": {
+      "name": "children",
+      "type": "null | string | number | bigint | false | true | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<AwaitedReactNode>",
+      "required": false,
+      "description": "Optional concrete implementation for the selected screen.",
+      "defaultValue": null
+    },
+    "screen": {
+      "name": "screen",
+      "type": "\"browse\" | \"menu\" | \"item\" | \"cart\" | \"tracking\" | \"orders\" | \"profile\"",
+      "required": false,
+      "description": "Active screen represented by the template surface.",
+      "defaultValue": "browse"
+    },
+    "themeName": {
+      "name": "themeName",
+      "type": "\"sage\" | \"terracotta\" | \"slate\" | \"cobalt\"",
+      "required": false,
+      "description": "Named palette from the Stack design template.",
+      "defaultValue": "sage"
+    }
+  }
+}
