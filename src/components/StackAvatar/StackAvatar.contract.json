@@ -1,0 +1,34 @@
+{
+  "componentName": "StackAvatar",
+  "source": "src/components/StackAvatar/StackAvatar.tsx",
+  "props": {
+    "color": {
+      "name": "color",
+      "type": "string",
+      "required": false,
+      "description": "Avatar background color.",
+      "defaultValue": "#666666"
+    },
+    "name": {
+      "name": "name",
+      "type": "string",
+      "required": true,
+      "description": "Person or team member name used to derive initials.",
+      "defaultValue": null
+    },
+    "ring": {
+      "name": "ring",
+      "type": "string",
+      "required": false,
+      "description": "Optional ring color used when avatars overlap on dark surfaces.",
+      "defaultValue": null
+    },
+    "size": {
+      "name": "size",
+      "type": "number",
+      "required": false,
+      "description": "Avatar diameter in pixels.",
+      "defaultValue": "28"
+    }
+  }
+}

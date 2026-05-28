@@ -1,0 +1,33 @@
+{
+  "name": "StackScreenFrame",
+  "description": "Phone-frame container matching the Claude Design mobile-first Stack prototype dimensions and device chrome.",
+  "variants": [
+    { "prop": "themeName", "values": ["sage", "terracotta", "slate", "cobalt"], "default": "sage" },
+    { "prop": "width", "values": [402], "default": 402 },
+    { "prop": "height", "values": [874], "default": 874 }
+  ],
+  "designTokensUsed": [
+    "color.stack.sage.bg",
+    "color.stack.sage.ink",
+    "font.family.geistSans",
+    "radii.phone",
+    "shadow.phone"
+  ],
+  "accessibility": [
+    "Use only for previews, prototypes, and handoff demos.",
+    "Production apps should render the content responsively without fake device chrome."
+  ],
+  "usage": {
+    "do": [
+      "Use to reproduce the Claude handoff preview faithfully.",
+      "Keep app content scrollable inside the frame."
+    ],
+    "dont": [
+      "Do not ship device chrome in the production mobile web app.",
+      "Do not nest phone frames."
+    ]
+  },
+  "examples": [
+    { "title": "Prototype frame", "code": "<StackScreenFrame><HomeScreen /></StackScreenFrame>" }
+  ]
+}

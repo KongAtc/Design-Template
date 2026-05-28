@@ -1,0 +1,20 @@
+{
+  "name": "stack-team-lunch-design-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Claude Design-derived React/TSX design template for the Stack team lunch ordering experience.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "generate:contracts": "tsc -p tsconfig.json && node dist/scripts/generate-contracts.js",
+    "check:contracts": "npm run generate:contracts && git diff --exit-code -- src/components",
+    "prepare:githooks": "git config core.hooksPath .githooks"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "react-docgen-typescript": "^2.4.0",
+    "typescript": "^5.9.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "StackRestaurantCard",
+  "description": "Browse-list restaurant card with food photography, timing badge, rating, cuisine, and delivery fee.",
+  "variants": [
+    { "prop": "themeName", "values": ["sage", "terracotta", "slate", "cobalt"], "default": "sage" }
+  ],
+  "designTokensUsed": [
+    "color.stack.sage.surface2",
+    "color.stack.sage.bg",
+    "color.stack.sage.ink",
+    "color.stack.sage.muted",
+    "color.stack.sage.accent",
+    "font.family.geistSans",
+    "font.size.caption",
+    "font.weight.semibold",
+    "radii.card"
+  ],
+  "accessibility": [
+    "Image alt text uses the restaurant name.",
+    "When clickable, wrap with navigation semantics or provide keyboard interaction in the consuming app."
+  ],
+  "usage": {
+    "do": [
+      "Use real food imagery with clear dish visibility.",
+      "Show delivery timing and rating consistently."
+    ],
+    "dont": [
+      "Do not use generic atmospheric images.",
+      "Do not crop the dish so tightly that the cuisine is unclear."
+    ]
+  },
+  "examples": [
+    {
+      "title": "Browse card",
+      "code": "<StackRestaurantCard restaurant={{ name: 'Sweetgreen', cuisine: 'Salads · Bowls', rating: 4.8, eta: '20-30 min', fee: '$2.49', imageUrl: '/sweetgreen.jpg', tag: 'Fast' }} />"
+    }
+  ]
+}

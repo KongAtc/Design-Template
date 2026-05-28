@@ -1,0 +1,30 @@
+{
+  "name": "StackAvatar",
+  "description": "Initials avatar for teammates in group orders, profile cards, and joined-member stacks.",
+  "variants": [
+    { "prop": "size", "values": [26, 28, 36, 44, 56], "default": 28 },
+    { "prop": "ring", "values": ["theme.ink", "theme.surface", null], "default": null }
+  ],
+  "designTokensUsed": [
+    "font.family.geistSans",
+    "font.weight.semibold",
+    "radii.avatar"
+  ],
+  "accessibility": [
+    "The component applies aria-label with the full name.",
+    "Do not rely on avatar color alone to identify a user."
+  ],
+  "usage": {
+    "do": [
+      "Use the ring prop when avatars overlap on dark surfaces.",
+      "Use stable teammate colors within the same order."
+    ],
+    "dont": [
+      "Do not use random colors that change across renders.",
+      "Do not show avatars without a nearby name when identity matters."
+    ]
+  },
+  "examples": [
+    { "title": "Joined teammate", "code": "<StackAvatar name=\"Maya R.\" color=\"#7C5CFA\" size={36} />" }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "componentName": "StackGroupBanner",
+  "source": "src/components/StackGroupBanner/StackGroupBanner.tsx",
+  "props": {
+    "deadline": {
+      "name": "deadline",
+      "type": "string",
+      "required": true,
+      "description": "Human-readable order close time.",
+      "defaultValue": null
+    },
+    "members": {
+      "name": "members",
+      "type": "StackGroupMember[]",
+      "required": true,
+      "description": "Team members participating in the group order.",
+      "defaultValue": null
+    },
+    "themeName": {
+      "name": "themeName",
+      "type": "\"sage\" | \"terracotta\" | \"slate\" | \"cobalt\"",
+      "required": false,
+      "description": "Named palette from the Stack design template.",
+      "defaultValue": "sage"
+    },
+    "title": {
+      "name": "title",
+      "type": "string",
+      "required": true,
+      "description": "Restaurant or group-order title.",
+      "defaultValue": null
+    }
+  }
+}

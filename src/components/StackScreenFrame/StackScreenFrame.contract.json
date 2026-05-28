@@ -1,0 +1,27 @@
+{
+  "componentName": "StackScreenFrame",
+  "source": "src/components/StackScreenFrame/StackScreenFrame.tsx",
+  "props": {
+    "height": {
+      "name": "height",
+      "type": "number",
+      "required": false,
+      "description": "Height of the prototype phone frame.",
+      "defaultValue": "874"
+    },
+    "themeName": {
+      "name": "themeName",
+      "type": "\"sage\" | \"terracotta\" | \"slate\" | \"cobalt\"",
+      "required": false,
+      "description": "Named palette from the Stack design template.",
+      "defaultValue": "sage"
+    },
+    "width": {
+      "name": "width",
+      "type": "number",
+      "required": false,
+      "description": "Width of the prototype phone frame.",
+      "defaultValue": "402"
+    }
+  }
+}

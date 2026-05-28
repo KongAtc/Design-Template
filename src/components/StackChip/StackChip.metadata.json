@@ -1,0 +1,35 @@
+{
+  "name": "StackChip",
+  "description": "Compact rounded filter chip used for cuisine categories and menu section tabs.",
+  "variants": [
+    { "prop": "active", "values": [true, false], "default": false },
+    { "prop": "themeName", "values": ["sage", "terracotta", "slate", "cobalt"], "default": "sage" }
+  ],
+  "designTokensUsed": [
+    "color.stack.sage.chip",
+    "color.stack.sage.ink",
+    "color.stack.sage.ink2",
+    "color.stack.sage.bg",
+    "font.family.geistSans",
+    "font.size.caption",
+    "font.weight.medium",
+    "radii.chip"
+  ],
+  "accessibility": [
+    "Render as a button when it changes filtered content.",
+    "Expose pressed or selected state from the consuming app when possible."
+  ],
+  "usage": {
+    "do": [
+      "Use inside horizontal scroll rows for categories.",
+      "Keep labels short, usually one or two words."
+    ],
+    "dont": [
+      "Do not use for destructive actions.",
+      "Do not use as the main CTA."
+    ]
+  },
+  "examples": [
+    { "title": "Active category", "code": "<StackChip label=\"Bowls\" active />" }
+  ]
+}

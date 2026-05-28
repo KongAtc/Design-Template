@@ -1,0 +1,27 @@
+{
+  "componentName": "StackChip",
+  "source": "src/components/StackChip/StackChip.tsx",
+  "props": {
+    "active": {
+      "name": "active",
+      "type": "false | true",
+      "required": false,
+      "description": "Active chips use the ink color and inverted text.",
+      "defaultValue": "false"
+    },
+    "label": {
+      "name": "label",
+      "type": "string",
+      "required": true,
+      "description": "Chip label shown to users.",
+      "defaultValue": null
+    },
+    "themeName": {
+      "name": "themeName",
+      "type": "\"sage\" | \"terracotta\" | \"slate\" | \"cobalt\"",
+      "required": false,
+      "description": "Named palette from the Stack design template.",
+      "defaultValue": "sage"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "componentName": "StackRestaurantCard",
+  "source": "src/components/StackRestaurantCard/StackRestaurantCard.tsx",
+  "props": {
+    "restaurant": {
+      "name": "restaurant",
+      "type": "StackRestaurantCardData",
+      "required": true,
+      "description": "Restaurant content displayed in the card.",
+      "defaultValue": null
+    },
+    "themeName": {
+      "name": "themeName",
+      "type": "\"sage\" | \"terracotta\" | \"slate\" | \"cobalt\"",
+      "required": false,
+      "description": "Named palette from the Stack design template.",
+      "defaultValue": "sage"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "StackPrimaryButton",
+  "description": "Primary rounded CTA from the Stack mobile team-lunch flow, used for add-to-order, place-order, and other high-confidence actions.",
+  "variants": [
+    { "prop": "size", "values": ["sm", "md", "lg"], "default": "lg" },
+    { "prop": "tone", "values": ["primary", "ink"], "default": "primary" },
+    { "prop": "themeName", "values": ["sage", "terracotta", "slate", "cobalt"], "default": "sage" }
+  ],
+  "designTokensUsed": [
+    "color.stack.sage.primary",
+    "color.stack.sage.primaryInk",
+    "color.stack.sage.ink",
+    "color.stack.sage.bg",
+    "font.family.geistSans",
+    "font.size.buttonSm",
+    "font.size.buttonMd",
+    "font.size.buttonLg",
+    "font.weight.semibold",
+    "radii.button",
+    "shadow.button"
+  ],
+  "accessibility": [
+    "Use for real button actions only, not navigation links.",
+    "Keep the visible label specific to the action.",
+    "If leading or trailing content is icon-only, ensure it is decorative or separately named."
+  ],
+  "usage": {
+    "do": [
+      "Use one primary CTA in a sticky bottom action area.",
+      "Use tone=\"ink\" for secondary dark floating CTAs such as view group order.",
+      "Use trailing for prices in checkout-style actions."
+    ],
+    "dont": [
+      "Do not use for low-priority filter chips.",
+      "Do not put multiple full-width primary buttons in the same mobile viewport.",
+      "Do not override colors outside the Stack token palettes."
+    ]
+  },
+  "examples": [
+    { "title": "Add to group order", "code": "<StackPrimaryButton full trailing={<span>$19.95</span>}>Add to group order</StackPrimaryButton>" }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "StackGroupBanner",
+  "description": "Dark live group-order banner for the Stack browse screen, showing deadline and joined teammates.",
+  "variants": [
+    { "prop": "themeName", "values": ["sage", "terracotta", "slate", "cobalt"], "default": "sage" }
+  ],
+  "designTokensUsed": [
+    "color.stack.sage.ink",
+    "color.stack.sage.bg",
+    "color.stack.sage.accent",
+    "font.family.geistSans",
+    "font.family.geistMono",
+    "font.size.caption",
+    "font.weight.semibold",
+    "radii.sheet"
+  ],
+  "accessibility": [
+    "Use as a button or link when it navigates to the group cart.",
+    "Do not convey order urgency only through color."
+  ],
+  "usage": {
+    "do": [
+      "Use near the top of Browse when a group order is active.",
+      "Include a clear close time.",
+      "Show joined member avatars as supporting context."
+    ],
+    "dont": [
+      "Do not show when no group order is active.",
+      "Do not use for normal promotional banners."
+    ]
+  },
+  "examples": [
+    {
+      "title": "Live group order",
+      "code": "<StackGroupBanner title=\"Sweetgreen, Tuesday\" deadline=\"11:45 AM\" members={members} />"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "componentName": "StackPrimaryButton",
+  "source": "src/components/StackPrimaryButton/StackPrimaryButton.tsx",
+  "props": {
+    "full": {
+      "name": "full",
+      "type": "false | true",
+      "required": false,
+      "description": "Makes the button fill its container.",
+      "defaultValue": "false"
+    },
+    "leading": {
+      "name": "leading",
+      "type": "null | string | number | bigint | false | true | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<AwaitedReactNode>",
+      "required": false,
+      "description": "Optional leading visual, usually an icon.",
+      "defaultValue": null
+    },
+    "size": {
+      "name": "size",
+      "type": "\"sm\" | \"md\" | \"lg\"",
+      "required": false,
+      "description": "Visual size from the Stack mobile ordering design.",
+      "defaultValue": "lg"
+    },
+    "themeName": {
+      "name": "themeName",
+      "type": "\"sage\" | \"terracotta\" | \"slate\" | \"cobalt\"",
+      "required": false,
+      "description": "Named palette from the Stack design template.",
+      "defaultValue": "sage"
+    },
+    "tone": {
+      "name": "tone",
+      "type": "\"primary\" | \"ink\"",
+      "required": false,
+      "description": "Color treatment for the button.",
+      "defaultValue": "primary"
+    },
+    "trailing": {
+      "name": "trailing",
+      "type": "null | string | number | bigint | false | true | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<AwaitedReactNode>",
+      "required": false,
+      "description": "Optional trailing visual, often a price or chevron.",
+      "defaultValue": null
+    }
+  }
+}
